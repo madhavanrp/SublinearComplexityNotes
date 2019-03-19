@@ -1,0 +1,93 @@
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{claim}{Claim}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition} \newtheorem{definition}{Definition}
+\newtheorem{fact}{Fact}
+\newenvironment{Proof}{{\it Proof. }}{$\Box$\\}
+\newcommand{\numberP}{{\mathchoice{\raisebox{1pt}
+        {$\displaystyle\#$}{\rm P}}{\raisebox{1pt}
+        {$\textstyle\#$}{\rm P}}{\raisebox{1pt}
+        {$\scriptstyle\#$}{\rm P}}{\raisebox{1pt}
+        {$\scriptscriptstyle\#$}{\rm P}}}}
+\newcommand{\sharpP}{\numberP}
+\newcommand{\Hprime}{${\mathrm H}^{'}$}
+\newcommand{\mo}{\leq^p_m}
+\newcommand{\tr}{\leq^p_T}
+\newcommand{\ttr}{\leq^p_{tt}}
+\newcommand{\btt}{\leq^p_{btt}}
+\newcommand{\onett}{\leq^p_{1tt}}
+\newcommand{\twott}{\leq^p_{2tt}}
+\newcommand{\pos}{\leq^p_{pos}}
+\newcommand{\postt}{\leq^p_{postt}}
+\newcommand{\ppcomp}{\P_{\pcomp}}
+\newcommand{\DistS}{{\rm Dist\Sigma_2}}
+\newcommand{\DistPNP}{{\rm Dist\P^{\NP}}}
+\newcommand{\AVTIME}{{\rm AVTIME}}
+\newcommand{\ppoly}{{\P/{\rm poly}}}
+
+\newcommand{\ignore}[1]{}
+
+\newcommand{\mathmake}[1]{{\mathchoice%
+   {\raisebox{0pt}{$\displaystyle #1$}}
+   {\raisebox{0pt}{$\textstyle #1$}}
+   {\raisebox{0pt}{$\scriptstyle #1$}}
+   {\raisebox{0pt}{$\scriptscriptstyle #1$}}}}
+
+\newcommand{\mathraise}[2]{{\mathchoice%
+   {\raisebox{1pt}{$\displaystyle #1$}{#2}}
+   {\raisebox{1pt}{$\textstyle #1$}{#2}}
+   {\raisebox{1pt}{$\scriptstyle #1$}{#2}}
+   {\raisebox{1pt}{$\scriptscriptstyle #1$}{#2}}}}
+
+\newcommand{\newfontobj}[2]{
+  \newcommand{#1}[1]{
+    \expandafter\def\csname##1\endcsname{{#2 ##1}}}}
+
+\newfontobj{\class}{\rm}
+\newfontobj{\lang}{\bf}
+\newfontobj{\oper}{\rm}
+
+
+\class{PSPACE}          % Language classes have to implement
+\class{AM}              % a clean way of doing the complement classes
+\class{MA}
+\class{NP}
+\class{P}
+\class{RP}
+\class{BPP}
+\class{advBPP}
+\class{DTIME}
+\class{ZPP}
+\class{EXPSPACE}
+\class{PH}
+\class{IP}
+\class{AVP}
+\newcommand{\AP}{{\rm Average\mbox{-}P}}
+\class{DistNP}
+\class{AZPP}
+\class{AVE}
+\class{DistE}
+\class{DistEXP}
+\class{E}
+\class{NE}
+\class{UE}
+\class{EXP}
+\class{pcomp}
+\class{NEXP}
+\class{UP}
+\class{DTIME}
+\class{NTIME}
+\class{R}
+\newcommand{\CoNP}{{\mbox {\rm co-NP}}}
+\newcommand{\CoUP}{{\mbox {\rm co-UP}}}
+\newcommand{\CoNE}{{\mbox{\rm co-NE}}}
+\newcommand{\SAT}{{\mbox SAT}}
+
+
